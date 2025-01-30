@@ -17,7 +17,8 @@ log.info('Screenshot file', path);
   const browser = await puppeteer.launch({headless: 'new'});
   const page = await browser.newPage();
 
-  await page.setViewport({width: 2014 / 2, height: 1434 / 2, deviceScaleFactor: 2});
+  // 1032 x 620
+  await page.setViewport({width: 1004, height: 602, deviceScaleFactor: 1});
 
   page.on('requestfinished', (req) => {
     log.info('Response', `<${req.url()}>`);
