@@ -20,6 +20,8 @@
             height: calc(1536px / 2);
 
             font-family: "DM Sans", Arial, sans-serif;
+
+            filter: sepia(0.05) saturate(0.8);
         }
 
         article {
@@ -71,6 +73,15 @@
             padding: 0;
             margin: 0;
         }
+
+        #overlay {
+            background: url(assets/crt_overlay.png);
+            background-size: cover;
+            opacity: 0.4;
+            width: calc(2048px / 2);
+            height: calc(1536px / 2);
+            position: absolute;
+        }
     </style>
     <body>
         <header>
@@ -84,6 +95,8 @@
         <footer>
             <h1>Microsoft Internet Expl...</h1>
         </footer>
+
+        <div id="overlay"></div>
 
         <script>
             document.querySelector('#title').textContent = 'Vælkomin';
