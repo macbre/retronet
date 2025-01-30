@@ -7,7 +7,8 @@ import puppeteer from 'puppeteer';
 
 import { getFileNameFromUrl } from './utils.mjs';
 
-const url = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
+// const url = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
+const url = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
 const path = getFileNameFromUrl(url);
 
 log.info('Rendering', `<${url}> ...`);

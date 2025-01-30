@@ -10,7 +10,9 @@ import puppeteer from 'puppeteer';
 
 import { getFileNameFromUrl, getOriginalUrlFromUrl } from './utils.mjs';
 
-const page = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
+// const page = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
+const page = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
+
 const title = (await readFile('web_archive.txt')).toString('utf-8');
 const screenshot = getFileNameFromUrl(page);
 
