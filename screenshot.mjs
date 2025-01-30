@@ -5,9 +5,13 @@ import { writeFile } from 'node:fs/promises';
 import log from 'npmlog';
 import puppeteer from 'puppeteer';
 
+import { getFileNameFromUrl } from './utils.mjs';
+
 const url = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
+const path = getFileNameFromUrl(url);
 
 log.info('Rendering', `<${url}> ...`);
+log.info('Screenshot file', path);
 
 (async () => {
   const browser = await puppeteer.launch({headless: 'new'});
@@ -40,7 +44,6 @@ log.info('Rendering', `<${url}> ...`);
   // wait a bit for the page to load, do some animations, etc.
   await setTimeout(3000);
 
-  const path = 'web_archive.png';
   await page.screenshot({path});
 
   log.info(`Screenshot saved in ${path}`);
