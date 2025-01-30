@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet"> -->
+    </head>
+
+    <style>
+        /* https://github.com/PrincetonUniversity/COS333_Comet/raw/refs/heads/master/android/app/src/main/assets/fonts/Microsoft%20Sans%20Serif.ttf */
+        @font-face {
+            font-family: 'DM Sans';
+            src: url('https://github.com/PrincetonUniversity/COS333_Comet/raw/refs/heads/master/android/app/src/main/assets/fonts/Microsoft%20Sans%20Serif.ttf');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent url(assets/ie55.png) no-repeat;
+            background-size: contain;
+
+            width: calc(2048px / 2);
+            height: calc(1536px / 2);
+
+            font-family: "DM Sans", Arial, sans-serif;
+        }
+
+        article {
+            position: absolute;
+            top: 116px;
+            left: 2px;
+            overflow: hidden;
+            height: 602px;
+            width: 1004px;
+            background-color: white;
+            /* border: solid 1px red; */
+        }
+
+        header, footer {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        header h1 {
+            color: #fff;
+            font-weight: 100;
+            font-size: 12px;
+            position: absolute;
+            top: 2px;
+            left: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        header address {
+            font-style: normal;
+            color: #000;
+            font-weight: 100;
+            font-size: 12px;
+            position: absolute;
+            top: 92px;
+            left: 65px;
+        }
+
+        footer h1 {
+            color: #000;
+            font-weight: 100;
+            font-size: 12px;
+            position: absolute;
+            top: 749px;
+            left: 178px;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <body>
+        <header>
+            <h1><span id="title"></span> - Microsoft Internet Explorer</h1>
+            <address></address>
+        </header>
+        <article>
+            <img id="screenshot" src="web_archive_www.faroejet.fo_c70955d1ea7ef2a.png" width="1004" height="602" />
+        </article>
+
+        <footer>
+            <h1>Microsoft Internet Expl...</h1>
+        </footer>
+
+        <script>
+            document.querySelector('#title').textContent = 'Vælkomin';
+            document.querySelector('address').textContent = 'http://www.faroejet.fo/';
+        </script>
+    </body>
+</html>
