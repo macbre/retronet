@@ -13,3 +13,10 @@ export function getFileNameFromUrl(url) {
 
     return `web_archive_${domain}_${hash}.png`;
 }
+
+export function getOriginalUrlFromUrl(url) {
+   // e.g. https://web.archive.org/web/20060621110703/http://www.faroejet.fo/foo/bar
+   const url_part = url.match('/(https?://.*)')[1];
+
+   return url_part;
+}

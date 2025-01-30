@@ -8,7 +8,8 @@
     "url": "git+https://github.com/macbre/retronet.git"
   },
   "scripts": {
-    "screenshot": "node screenshot.mjs"
+    "screenshot": "node screenshot.mjs",
+    "retronet": "node retronet.mjs"
   },
   "author": "Maciej Brencz",
   "license": "ISC",
