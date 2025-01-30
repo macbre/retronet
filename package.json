@@ -1,0 +1,23 @@
+{
+  "name": "retronet",
+  "version": "1.0.0",
+  "description": "Repository for rendering a retro view of sites snapshots taken from Wayback Machine",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macbre/retronet.git"
+  },
+  "scripts": {
+    "screenshot": "node screenshot.mjs"
+  },
+  "author": "Maciej Brencz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/macbre/retronet/issues"
+  },
+  "homepage": "https://github.com/macbre/retronet#readme",
+  "dependencies": {
+    "npmlog": "^7.0.1",
+    "puppeteer": "^24.1.1"
+  }
+}
