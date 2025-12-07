@@ -8,7 +8,8 @@ import puppeteer from 'puppeteer';
 import { getFileNameFromUrl } from './utils.mjs';
 
 // const url = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
-const url = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
+// const url = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
+const url = 'https://web.archive.org/web/20010723022643/http://www.bonus.fo/';
 const path = getFileNameFromUrl(url);
 
 log.info('Rendering', `<${url}> ...`);
@@ -44,7 +45,7 @@ log.info('Screenshot file', path);
   log.info(`Taking the screenshot of the page titled "${title}"...`);
 
   // wait a bit for the page to load, do some animations, etc.
-  await setTimeout(3000);
+  await setTimeout(5000);
 
   await page.screenshot({path});
 
