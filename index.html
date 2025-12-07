@@ -4,11 +4,11 @@
     </head>
 
     <style>
-        /* https://gist.github.com/zachlatta/6d088d33451aa21017c7cd58399b921c */
-        /*   font-family:"Pixelated MS Sans Serif";src:url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif_bold.woff) format("woff");src:url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif_bold.woff2) format("woff2");font-weight:700;font-style:normal; */
+        /* https://www.dafont.com/w95fa.font */
+	/*  Free for both personal and commercial use, licensed under SIL OpenFont license. */
         @font-face {
             font-family: 'DM Sans';
-            src: url('./assets/sans_serif.ttf');
+            src: url('./assets/w95fa.woff2');
         }
 
         body {
@@ -44,10 +44,12 @@
             width: 100%;
         }
 
+	/* window title bar */
         header h1 {
             color: #fff;
             font-weight: 100;
-            font-size: 12px;
+            font-size: 13px;
+	    letter-spacing: .2px;
             position: absolute;
             top: 2px;
             left: 20px;
@@ -59,18 +61,21 @@
             font-style: normal;
             color: #000;
             font-weight: 100;
-            font-size: 12px;
-            position: absolute;
-            top: 91px;
+            font-size: 13px;
+       	    letter-spacing: .2px;
+	    position: absolute;
+            top: 93px;
             left: 65px;
         }
 
+	/* window title at the bottom */
         footer h1 {
             color: #000;
             font-weight: 100;
-            font-size: 11px;
+            font-size: 12px;
+	    letter-spacing: .2px;
             position: absolute;
-            top: 749px;
+            top: 751px;
             left: 178px;
             padding: 0;
             margin: 0;
@@ -91,7 +96,7 @@
             <address>http://foo.bar</address>
         </header>
         <article>
-            <img id="screenshot" src="web_archive_fo.wikipedia.org_cc5ff2585a6546a.png" width="1004" height="602" />
+            <img id="screenshot" src="web_archive_www.reddit.com_54684a810710828.png" width="1004" height="602" />
         </article>
 
         <footer>
