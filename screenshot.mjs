@@ -10,7 +10,8 @@ import { getFileNameFromUrl } from './utils.mjs';
 // const url = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
 // const url = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
 //const url = 'https://web.archive.org/web/20010723022643/http://www.bonus.fo/';
-const url = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
+//const url = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
+const url = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
 const path = getFileNameFromUrl(url);
 
 log.info('Rendering', `<${url}> ...`);
