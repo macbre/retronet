@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { setTimeout } from 'node:timers/promises';
-import { writeFile } from 'node:fs/promises';
+import { symlink, writeFile } from 'node:fs/promises';
 
 import log from 'npmlog';
 import puppeteer from 'puppeteer';
@@ -11,8 +11,9 @@ import { getFileNameFromUrl } from './utils.mjs';
 // const url = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
 //const url = 'https://web.archive.org/web/20010723022643/http://www.bonus.fo/';
 //const url = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
-const url = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
-const path = getFileNameFromUrl(url);
+// const url = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
+const url = 'https://web.archive.org/web/20130807124247/https://github.com/torvalds/linux';
+const path = 'screenshots/' + getFileNameFromUrl(url);
 
 log.info('Rendering', `<${url}> ...`);
 log.info('Screenshot file', path);
@@ -52,6 +53,9 @@ log.info('Screenshot file', path);
   await page.screenshot({path});
 
   log.info(`Screenshot saved in ${path}`);
+
+  await symlink(path, 'screenshot.png');
+  log.info(`Symlinked to screenshot.png`);
 
   await browser.close();
   log.info('Done');

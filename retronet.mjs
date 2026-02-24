@@ -14,10 +14,10 @@ import { getFileNameFromUrl, getOriginalUrlFromUrl } from './utils.mjs';
 //const page = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
 // const page = 'https://web.archive.org/web/20181223194317/http://local.fo/';
 // const page = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
-const page = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
+// const page = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
+const page = 'https://web.archive.org/web/20130807124247/https://github.com/torvalds/linux';
 
 const title = (await readFile('web_archive.txt')).toString('utf-8');
-const screenshot = getFileNameFromUrl(page);
 
 const __filename = fileURLToPath(import.meta.url);
 const dir = path.dirname(await realpath(__filename));
@@ -26,7 +26,7 @@ const url = 'file://' + dir + '/index.html';
 const page_url = getOriginalUrlFromUrl(page);
 
 log.info('Rendering', `<${url}> ...`);
-log.info('Page', {page_url, title, screenshot});
+log.info('Page', {page_url, title});
 
 (async () => {
   const browser = await puppeteer.launch({headless: 'new'});
@@ -46,11 +46,10 @@ log.info('Page', {page_url, title, screenshot});
   const took = Date.now() - then;
 
   // customize UI - set page title and URL
-  await page.evaluate((title, page_url, screenshot) => {
+  await page.evaluate((title, page_url) => {
     document.querySelector('#title').textContent = title;
     document.querySelector('address').textContent = page_url;
-    document.querySelector('#screenshot').src = screenshot;
-  }, title, page_url, screenshot);
+  }, title, page_url);
   await setTimeout(250);
 
   log.info(`Page loaded`, `in ${took} ms`);
