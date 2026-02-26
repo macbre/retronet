@@ -11,11 +11,12 @@ import puppeteer from 'puppeteer';
 import { getFileNameFromUrl, getOriginalUrlFromUrl } from './utils.mjs';
 
 // const page = 'https://web.archive.org/web/20060621110703/http://www.faroejet.fo/';
-//const page = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
+// const page = 'https://web.archive.org/web/20040130040316/http://fo.wikipedia.org/wiki.cgi';
 // const page = 'https://web.archive.org/web/20181223194317/http://local.fo/';
 // const page = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
 // const page = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
-const page = 'https://web.archive.org/web/20130807124247/https://github.com/torvalds/linux';
+// const page = 'https://web.archive.org/web/20130807124247/https://github.com/torvalds/linux';
+const page = 'https://web.archive.org/web/20090607025726/http://vim.wikia.com/wiki/Vim_Tips_Wiki';
 
 const title = (await readFile('web_archive.txt')).toString('utf-8');
 
