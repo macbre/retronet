@@ -16,7 +16,8 @@ import { getFileNameFromUrl, getOriginalUrlFromUrl } from './utils.mjs';
 // const page = 'https://web.archive.org/web/20061125065658/http://www.reddit.com/?tbnl-session=9316:0E1D16DC6D639E728538B99D69582C29';
 // const page = 'https://web.archive.org/web/20040701020748/http://flickr.com/';
 // const page = 'https://web.archive.org/web/20130807124247/https://github.com/torvalds/linux';
-const page = 'https://web.archive.org/web/20090607025726/http://vim.wikia.com/wiki/Vim_Tips_Wiki';
+// const page = 'https://web.archive.org/web/20090607025726/http://vim.wikia.com/wiki/Vim_Tips_Wiki';
+const page = 'https://web.archive.org/web/20011211204057/http://eurosport.com/home/sport_0_S25.htm';
 
 const title = (await readFile('web_archive.txt')).toString('utf-8');
 
