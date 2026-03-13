@@ -81,10 +81,20 @@
             margin: 0;
         }
 
+        #clock {
+            position: absolute;
+            bottom: 7px;
+            right: 8px;
+            background: #bebebf;
+            font-size: 12px;
+            letter-spacing: 0.25px;
+            padding: 0 2px;
+        }
+
         #overlay {
             background: url(assets/crt_overlay.png);
             background-size: cover;
-            opacity: 0.4;
+            opacity: 0.2;
             width: calc(2048px / 2);
             height: calc(1536px / 2);
             position: absolute;
@@ -103,11 +113,15 @@
             <h1>Microsoft Internet Expl...</h1>
         </footer>
 
+        <section id="clock">17:24</section>
+
         <div id="overlay"></div>
 
         <script>
             // document.querySelector('#title').textContent = 'Vælkomin';
             // document.querySelector('address').textContent = 'http://www.faroejet.fo/';
+
+            document.querySelector('#clock').textContent = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
         </script>
     </body>
 </html>
