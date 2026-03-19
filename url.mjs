@@ -11,7 +11,8 @@
 // const page = 'https://web.archive.org/web/20040324062019/http://wordpress.org/';
 // const page = 'https://web.archive.org/web/20000229050743/http://ask.com/';
 // const page = 'https://web.archive.org/web/20081103142857/https://twitter.com/jack/status/20';
-const page = 'https://web.archive.org/web/19980213154824/http://www13.geocities.com/';
+// const page = 'https://web.archive.org/web/19980213154824/http://www13.geocities.com/';
+const page = 'https://web.archive.org/web/19981212033626/http://www.tucows.com/';
 //           ^^^^
 
 export default page;
