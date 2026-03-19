@@ -5,7 +5,7 @@ import { readFile, realpath } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import log from 'npmlog';
+import { log } from 'npmlog';
 import puppeteer from 'puppeteer';
 
 import { getOriginalUrlFromUrl } from './utils.mjs';

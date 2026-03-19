@@ -2,7 +2,7 @@
 import { setTimeout } from 'node:timers/promises';
 import { symlink, writeFile, unlink } from 'node:fs/promises';
 
-import log from 'npmlog';
+import { log } from 'npmlog';
 import puppeteer from 'puppeteer';
 
 import { getFileNameFromUrl } from './utils.mjs';
