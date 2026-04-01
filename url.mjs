@@ -16,7 +16,8 @@
 // const page = 'https://web.archive.org/web/19970605230559/http://www.nasa.gov/';
 // const page = 'https://web.archive.org/web/19990420164134/http://www.php.net/';
 // const page = 'http://web.archive.org/web/20000511213751/http://www.soundblaster.com/welcome.asp';
-const page = 'https://web.archive.org/web/20011101023644/http://www.apple.com/';
+// const page = 'https://web.archive.org/web/20011101023644/http://www.apple.com/';
+const page = 'https://web.archive.org/web/20011029235217/http://www.winamp.com/';
 //           ^^^^
 
 export default page;
