@@ -18,7 +18,8 @@
 // const page = 'http://web.archive.org/web/20000511213751/http://www.soundblaster.com/welcome.asp';
 // const page = 'https://web.archive.org/web/20011101023644/http://www.apple.com/';
 // const page = 'https://web.archive.org/web/20011029235217/http://www.winamp.com/';
-const page = 'https://web.archive.org/web/20000302015729/http://www.valvesoftware.com/square.htm';
+//const page = 'https://web.archive.org/web/20000302015729/http://www.valvesoftware.com/square.htm';
+const page = 'https://web.archive.org/web/20010301220009/http://www.napster.com/';
 //           ^^^^
 
 export default page;
