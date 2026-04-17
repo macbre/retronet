@@ -19,7 +19,8 @@
 // const page = 'https://web.archive.org/web/20011101023644/http://www.apple.com/';
 // const page = 'https://web.archive.org/web/20011029235217/http://www.winamp.com/';
 //const page = 'https://web.archive.org/web/20000302015729/http://www.valvesoftware.com/square.htm';
-const page = 'https://web.archive.org/web/20010301220009/http://www.napster.com/';
+// const page = 'https://web.archive.org/web/20010301220009/http://www.napster.com/';
+const page = 'https://web.archive.org/web/20030905090954/http://last.fm/index.php?InsineSession=92c04e0f8c8067656a20c188c2873d46';
 //           ^^^^
 
 export default page;
