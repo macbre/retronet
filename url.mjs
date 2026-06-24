@@ -21,7 +21,8 @@
 // const page = 'https://web.archive.org/web/20000302015729/http://www.valvesoftware.com/square.htm';
 // const page = 'https://web.archive.org/web/20010301220009/http://www.napster.com/';
 // const page = 'https://web.archive.org/web/20030905090954/http://last.fm/index.php?InsineSession=92c04e0f8c8067656a20c188c2873d46';
-const page = 'https://web.archive.org/web/20030224161524/http://www.netflix.com/Default/';
+// const page = 'https://web.archive.org/web/20030224161524/http://www.netflix.com/Default/';
+const page = 'https://web.archive.org/web/20001109181600/http://www.nokia.com/phones/3210/index.html';
 //           ^^^^
 
 export default page;
