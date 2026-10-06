@@ -34,7 +34,9 @@ log.info('Screenshot file', path);
 
   // close the Web Archive nav bar and get the page title
   const title = await page.evaluate(() => {
-    document.querySelector('#wm-ipp-base').style.display = 'none';
+    const navbar = document.querySelector('#wm-ipp-base');
+    if (navbar) navbar.style.display = 'none';
+
     return document.title;
   });
   await setTimeout(250);
