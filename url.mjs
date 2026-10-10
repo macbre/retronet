@@ -23,7 +23,8 @@
 // const page = 'https://web.archive.org/web/20030905090954/http://last.fm/index.php?InsineSession=92c04e0f8c8067656a20c188c2873d46';
 // const page = 'https://web.archive.org/web/20030224161524/http://www.netflix.com/Default/';
 // const page = 'https://web.archive.org/web/20001109181600/http://www.nokia.com/phones/3210/index.html';
-const page = 'https://vivid-fjord.view.fast';
+// const page = 'https://vivid-fjord.view.fast';
+const page = 'https://web.archive.org/web/19970103015449/http://www1.intel.com/';
 //           ^^^^
 
 export default page;
