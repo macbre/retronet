@@ -25,7 +25,8 @@
 // const page = 'https://web.archive.org/web/20001109181600/http://www.nokia.com/phones/3210/index.html';
 // const page = 'https://vivid-fjord.view.fast';
 // const page = 'https://web.archive.org/web/19970103015449/http://www1.intel.com/';
-const page = 'https://web.archive.org/web/20030608083459/http://www.britishairways.com/concorde/docs/facts/facts5.html';
+// const page = 'https://web.archive.org/web/20030608083459/http://www.britishairways.com/concorde/docs/facts/facts5.html';
+const page = 'https://web.archive.org/web/20070410153135/http://pipes.yahoo.com/pipes/';
 //           ^^^^
 
 export default page;
