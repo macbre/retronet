@@ -27,7 +27,8 @@
 // const page = 'https://web.archive.org/web/19970103015449/http://www1.intel.com/';
 // const page = 'https://web.archive.org/web/20030608083459/http://www.britishairways.com/concorde/docs/facts/facts5.html';
 // const page = 'https://web.archive.org/web/20070410153135/http://pipes.yahoo.com/pipes/';
-const page = 'https://web.archive.org/web/20040504212012/http://www.imdb.com/title/tt0107290/';
+// const page = 'https://web.archive.org/web/20040504212012/http://www.imdb.com/title/tt0107290/';
+const page = 'https://web.archive.org/web/20001018192153/http://www.idsoftware.com/quake2/index.html';
 //           ^^^^
 
 export default page;
