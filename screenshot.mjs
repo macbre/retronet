@@ -17,6 +17,14 @@ log.info('Screenshot file', path);
   const browser = await puppeteer.launch({headless: 'new'});
   const page = await browser.newPage();
 
+  // pretend we're IE6 on Windows :-)
+  await page.setUserAgent('Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
+  await page.evaluateOnNewDocument(() => {
+    Object.defineProperty(Navigator.prototype, 'platform', {
+      get: () => 'Win32',
+    });
+  });
+
   // 1032 x 620
   await page.setViewport({width: 1004, height: 602, deviceScaleFactor: 1});
 
@@ -31,6 +39,11 @@ log.info('Screenshot file', path);
   const took = Date.now() - then;
 
   log.info(`Page loaded`, `in ${took} ms`);
+
+  await page.evaluate(() => {
+    console.log('User agent: ' + navigator.userAgent);
+    console.log('Platform:   ' + navigator.platform);
+  });
 
   // close the Web Archive nav bar and get the page title
   const title = await page.evaluate(() => {
