@@ -31,7 +31,8 @@
 // const page = 'https://web.archive.org/web/20001018192153/http://www.idsoftware.com/quake2/index.html';
 // const page = 'https://web.archive.org/web/20030404095318/http://www.thexfiles.com/episodes/season1/1x07.html';
 // const page = 'https://web.archive.org/web/20021010204530fw_/http://www.fox.com/futurama/bios/leela.htm';
-const page = 'https://web.archive.org/web/20041115004755/http://www.mozilla.org/products/firefox/';
+// const page = 'https://web.archive.org/web/20041115004755/http://www.mozilla.org/products/firefox/';
+const page = 'https://web.archive.org/web/20061128234502/http://youtube.com/';
 //           ^^^^
 
 export default page;
