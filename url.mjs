@@ -33,7 +33,8 @@
 // const page = 'https://web.archive.org/web/20021010204530fw_/http://www.fox.com/futurama/bios/leela.htm';
 // const page = 'https://web.archive.org/web/20041115004755/http://www.mozilla.org/products/firefox/';
 // const page = 'https://web.archive.org/web/20061128234502/http://youtube.com/';
-const page = 'https://web.archive.org/web/20051220080305/https://del.icio.us/';
+// const page = 'https://web.archive.org/web/20051220080305/https://del.icio.us/';
+const page = 'https://web.archive.org/web/20071015074643/http://www.tumblr.com/';
 //           ^^^^
 
 export default page;
