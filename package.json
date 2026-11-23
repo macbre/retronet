@@ -19,7 +19,7 @@
   "homepage": "https://github.com/macbre/retronet#readme",
   "dependencies": {
     "npmlog": "npm:@appium/logger@^2.0.5",
-    "puppeteer": "^25.17.0"
+    "puppeteer": "^25.18.1"
   },
   "allowScripts": {
     "puppeteer@25.17.0": true
